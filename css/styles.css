@@ -1,0 +1,95 @@
+/* Paleta de colores */
+:root {
+    --primary: #6C63FF;
+    --secondary: #4DAAF8;
+    --accent: #FF6584;
+    --dark: #1A1A2E;
+    --light: #F8F9FA;
+}
+
+/* Hero con gradiente y overlay */
+.hero {
+    background: 
+        linear-gradient(135deg, rgba(76, 81, 191, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%),
+        url('/images/hero.png') no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 80px;
+    color: white;
+    position: relative;
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero .btn-primary {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* === Footer - Diseño mejorado === */
+.footer {
+    background: linear-gradient(135deg, var(--dark) 0%, #2a2a4e 100%); /* Degradado oscuro */
+    color: white;
+    border-top: 3px solid var(--primary); /* Borde superior morado */
+}
+
+/* Títulos de secciones */
+.footer h5 {
+    text-align: center;
+    color: var(--primary); /* Morado (#6C63FF) */
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Enlaces */
+.footer .list-unstyled {
+    text-align: center;
+    padding-left: 0;
+}
+
+.footer .list-unstyled a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8); /* Blanco con 80% opacidad */
+    display: block; /* Para mejor espaciado */
+    margin: 0.5rem 0;
+    transition: all 0.3s;
+}
+
+.footer .list-unstyled a:hover {
+    color: var(--accent); /* Rosa (#FF6584) al hover */
+    transform: translateX(5px); /* Efecto desplazamiento */
+}
+
+/* Iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary) !important; /* Azul (#4DAAF8) al hover */
+    transform: scale(1.2);
+}
+
+/* Línea divisoria y copyright */
+.footer hr {
+    border-color: rgba(108, 99, 255, 0.3); /* Morado semi-transparente */
+    margin: 2rem auto;
+}
+
+.footer .text-center p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}

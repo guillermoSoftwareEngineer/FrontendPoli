@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | GestiónPro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- Header (IDÉNTICO al home) -->
+    <header style="background-color: #7984db !important;" class="header py-3 fixed-top bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="index.html">
+                        <span class="logo-text">Gestión</span>
+                        <span class="logo-highlight">Pro</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link text-uppercase fw-bold active" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="restaurants.html">Restaurante</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase fw-bold" href="login.html" id="loginBtn">Iniciar Sesión</a></li>
+                            <li class="nav-item"><a class="btn btn-primary text-uppercase fw-bold ms-lg-3" href="register.html" id="registerBtn">Registrarse</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Registro -->
+    <section class="register-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card register-card shadow-lg">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">CREA TU CUENTA</h2>
+                            <form id="registerForm">
+                                <!-- Nombre -->
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <!-- Email -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <!-- Contraseña -->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                                <!-- Rol -->
+                                <div class="mb-4">
+                                    <label class="form-label">Rol</label>
+                                    <div class="d-flex gap-3">
+                                        <div class="form-check flex-grow-1">
+                                            <input class="form-check-input" type="radio" name="role" id="adminRole" value="admin" checked>
+                                            <label class="form-check-label" for="adminRole">
+                                                <i class="fas fa-user-shield me-2"></i>Administrador
+                                            </label>
+                                        </div>
+                                        <div class="form-check flex-grow-1">
+                                            <input class="form-check-input" type="radio" name="role" id="viewerRole" value="viewer">
+                                            <label class="form-check-label" for="viewerRole">
+                                                <i class="fas fa-eye me-2"></i>Visualizador
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Submit -->
+                                <button type="submit" class="btn btn-primary w-100 py-2">
+                                    Registrarse
+                                </button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>¿Ya tienes cuenta? <a href="#" id="loginLink">Inicia sesión</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (IDÉNTICO al home) -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="logo mb-3">
+                        <span class="logo-text">Gestión</span>
+                        <span class="logo-highlight">Pro</span>
+                    </h5>
+                    <p>Plataforma de gestión de usuarios y servicios.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="#services" class="text-white">Servicios</a></li>
+                        <li><a href="contact.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Términos</a></li>
+                        <li><a href="#" class="text-white">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Conecta</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">© 2025 GestiónPro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Registro Exitoso -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 15px; border: none">
+            <div class="modal-body text-center p-5">
+                <img src="/images/okModal.png" alt="Éxito" class="mb-4" style="width: 100px;">
+                <h3 class="mb-3" style="color: #7984db">¡REGISTRO EXITOSO!</h3>
+                <p>Tu cuenta ha sido creada correctamente</p>
+                <button type="button" class="btn btn-primary mt-3" style="background-color: #7984db; border: none" data-bs-dismiss="modal">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/register.js"></script>
+</body>
+</html>

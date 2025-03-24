@@ -1,0 +1,89 @@
+/* Fondo de la sección */
+.register-section {
+    background-image: url('/images/castillo.png');
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    min-height: calc(100vh - 80px); /* Resta el header */
+    opacity: 0.9;
+}
+
+/* Card del formulario */
+.register-card {
+    margin-top: 15%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: url('/images/mesero.png');
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.register-card .card-body {
+    padding: 2.5rem;
+}
+
+/* Inputs */
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #7984db; /* Morado del header */
+    box-shadow: 0 0 0 0.25rem rgba(121, 132, 219, 0.25);
+}
+
+/* Radio buttons */
+.form-check-input:checked {
+    background-color: #7984db; /* Morado del header */
+    border-color: #7984db;
+}
+
+/* Botón de submit */
+.btn-primary {
+    background-color: #7984db !important; /* Morado del header */
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #6C63FF !important;
+    transform: translateY(-2px);
+}
+
+/* Enlace de login */
+#loginLink {
+    color: #7984db;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#loginLink:hover {
+    color: #FF6584;
+}
+
+/* Estilos para el modal */
+#successModal .modal-content {
+    background-color: #F8F9FA;
+    border: 2px solid #7984db;
+}
+
+#successModal .btn-primary {
+    background-color: #7984db !important;
+    border-radius: 8px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+#successModal .btn-primary:hover {
+    background-color: #6C63FF !important;
+    transform: translateY(-2px);
+}

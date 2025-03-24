@@ -1,0 +1,115 @@
+/* Variables de color */
+:root {
+    --primary: #6C63FF;
+    --secondary: #4DAAF8;
+    --accent: #FF6584;
+    --dark: #1A1A2E;
+    --light: #F8F9FA;
+    --header-bg: #929cfd;
+}
+
+/* Header */
+.header {
+    background-color: var(--header-bg) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand .logo-text {
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-brand .logo-highlight {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.restaurants-hero {
+    background: 
+        linear-gradient(rgba(108, 99, 255, 0.8), rgba(77, 170, 248, 0.3)),
+        url('/images/restaurante.png') center/cover no-repeat;
+    min-height: 400px;
+    padding-top: 80px;
+}
+
+/* Cards de restaurantes */
+.restaurant-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.2);
+}
+
+.restaurant-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--accent);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Sección de opiniones en cards */
+.restaurant-reviews {
+    border-top: 1px dashed #eee;
+    padding-top: 15px;
+}
+
+.review-card {
+    background: rgba(108, 99, 255, 0.03);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 2px solid var(--primary);
+}
+
+.review-text-small {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.rating-small {
+    font-size: 0.8rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .restaurants-hero {
+        min-height: 300px;
+    }
+    
+    .restaurant-img {
+        height: 180px;
+    }
+}

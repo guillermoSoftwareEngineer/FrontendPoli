@@ -1,0 +1,176 @@
+/* Variables de color */
+:root {
+    --primary: #6C63FF;
+    --secondary: #4DAAF8;
+    --accent: #FF6584;
+    --dark: #1A1A2E;
+    --light: #F8F9FA;
+    --header-bg: #929cfd;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding-top: 80px; /* Compensa el header fijo */
+}
+
+/* Header */
+.header {
+    background-color: var(--header-bg) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand .logo-text {
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-brand .logo-highlight {
+    color: #FFD700;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+}
+
+/* Hero Section */
+.contact-hero {
+    background: 
+        linear-gradient(rgba(146, 156, 253, 0.8), rgba(108, 99, 255, 0.1)),
+        url('/images/amigos.png') center/cover no-repeat;
+    min-height: 300px;
+    padding-top: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de contacto */
+.contact-info-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary);
+}
+
+.contact-form-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--accent);
+}
+
+/* Estilos para iconos de redes sociales (SIEMPRE VISIBLES) */
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons .btn-icon {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--primary) !important;
+    color: var(--primary) !important;
+    background-color: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.social-icons .btn-icon i {
+    font-size: 1.1rem;
+}
+
+/* Efecto hover para iconos */
+.social-icons .btn-icon:hover {
+    transform: scale(1.12);
+    background-color: var(--primary);
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
+}
+
+/* Formulario */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
+
+.footer .social-icons a {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white !important;
+    border: none !important;
+    transition: all 0.3s;
+}
+
+.footer .social-icons a:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-hero {
+        text-align: center;
+        min-height: 250px;
+    }
+    
+    .contact-info-card {
+        margin-bottom: 30px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .header {
+        padding: 10px 0;
+    }
+}
