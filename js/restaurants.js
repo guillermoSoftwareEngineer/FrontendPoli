@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Hace 2 días",
                     rating: 5,
                     comment: "La mejor pasta que he probado en años!",
-                    image: "images/testimonials/user1.jpg"
+                    image: "/images/maria.png"
                 },
                 {
                     user: "Carlos R.",
                     date: "Hace 1 semana",
                     rating: 4,
                     comment: "Excelente servicio, el tiramisú es increíble.",
-                    image: "images/testimonials/user2.jpg"
+                    image: "/images/carlos.png"
                 }
             ]
         },
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Hace 3 días",
                     rating: 5,
                     comment: "El sushi más fresco de la ciudad.",
-                    image: "images/testimonials/user3.jpg"
+                    image: "/images/mujer.png"
                 }
             ]
         },
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Ayer",
                     rating: 5,
                     comment: "Los mejores cortes de carne que he probado.",
-                    image: "images/testimonials/user4.jpg"
+                    image: "/images/pedro.png"
                 }
             ]
         }

@@ -18,6 +18,10 @@
     position: relative;
 }
 
+.navbar-brand .logo-highlight {
+    color: #FFD700; /* Amarillo del logo */
+}
+
 /* Animaciones personalizadas */
 @keyframes float {
     0% { transform: translateY(0px); }
