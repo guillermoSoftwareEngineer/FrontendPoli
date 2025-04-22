@@ -11,7 +11,7 @@
 .hero {
     background: 
         linear-gradient(135deg, rgba(76, 81, 191, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%),
-        url('/images/hero.png') no-repeat center center/cover;
+        url('./images/hero.png') no-repeat center center/cover;
     min-height: 100vh;
     padding-top: 80px;
     color: white;
