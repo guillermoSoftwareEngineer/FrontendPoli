@@ -1,4 +1,4 @@
-/* Paleta de colores */
+/* Paleta de colores en variables */
 :root {
     --primary: #6C63FF;
     --secondary: #4DAAF8;
@@ -11,7 +11,7 @@
 .hero {
     background: 
         linear-gradient(135deg, rgba(76, 81, 191, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%),
-        url('./images/hero.png') no-repeat center center/cover;
+        url('/images/hero.png') no-repeat center center/cover;
     min-height: 100vh;
     padding-top: 80px;
     color: white;
@@ -19,10 +19,10 @@
 }
 
 .navbar-brand .logo-highlight {
-    color: #FFD700; /* Amarillo del logo */
+    color: #FFD700; 
 }
 
-/* Animaciones personalizadas */
+/* Animaciones */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -33,17 +33,17 @@
     animation: float 3s ease-in-out infinite;
 }
 
-/* === Footer - Diseño mejorado === */
+/* Footer */
 .footer {
-    background: linear-gradient(135deg, var(--dark) 0%, #2a2a4e 100%); /* Degradado oscuro */
+    background: linear-gradient(135deg, var(--dark) 0%, #2a2a4e 100%); 
     color: white;
-    border-top: 3px solid var(--primary); /* Borde superior morado */
+    border-top: 3px solid var(--primary); 
 }
 
-/* Títulos de secciones */
+/* Titulos de secciones */
 .footer h5 {
     text-align: center;
-    color: var(--primary); /* Morado (#6C63FF) */
+    color: var(--primary); 
     font-weight: 700;
     margin-bottom: 1.2rem;
     text-transform: uppercase;
@@ -58,18 +58,18 @@
 
 .footer .list-unstyled a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8); /* Blanco con 80% opacidad */
-    display: block; /* Para mejor espaciado */
+    color: rgba(255, 255, 255, 0.8); 
+    display: block; 
     margin: 0.5rem 0;
     transition: all 0.3s;
 }
 
 .footer .list-unstyled a:hover {
-    color: var(--accent); /* Rosa (#FF6584) al hover */
-    transform: translateX(5px); /* Efecto desplazamiento */
+    color: var(--accent); 
+    transform: translateX(5px); 
 }
 
-/* Iconos sociales */
+/* Iconos Redes */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -83,13 +83,13 @@
 }
 
 .social-icons a:hover {
-    color: var(--secondary) !important; /* Azul (#4DAAF8) al hover */
+    color: var(--secondary) !important; 
     transform: scale(1.2);
 }
 
-/* Línea divisoria y copyright */
+/* Línea division y copyright */
 .footer hr {
-    border-color: rgba(108, 99, 255, 0.3); /* Morado semi-transparente */
+    border-color: rgba(108, 99, 255, 0.3); 
     margin: 2rem auto;
 }
 
