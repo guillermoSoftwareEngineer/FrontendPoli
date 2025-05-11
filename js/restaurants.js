@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 1,
             name: "Trattoria Bella",
-            image: "../images/italiano.png",
+            image: "/images/italiano.png",
             cuisine: "Italiana",
             location: "Calle 85 #12-45",
             rating: 4.9,
@@ -15,21 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Hace 2 días",
                     rating: 5,
                     comment: "La mejor pasta que he probado en años!",
-                    image: "../images/maria.png"
+                    image: "/images/maria.png"
                 },
                 {
                     user: "Carlos R.",
                     date: "Hace 1 semana",
                     rating: 4,
                     comment: "Excelente servicio, el tiramisú es increíble.",
-                    image: "../images/carlos.png"
+                    image: "/images/carlos.png"
                 }
             ]
         },
         {
             id: 2,
             name: "Sakura Sushi",
-            image: "../images/japones.png",
+            image: "/images/japones.png",
             cuisine: "Japonés",
             location: "Carrera 45 #72-30",
             rating: 4.5,
@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Hace 3 días",
                     rating: 5,
                     comment: "El sushi más fresco de la ciudad.",
-                    image: "../images/mujer.png"
+                    image: "/images/mujer.png"
                 }
             ]
         },
         {
             id: 3,
             name: "El Asador",
-            image: "../images/tomahawk.png",
+            image: "/images/tomahawk.png",
             cuisine: "Carnes",
             location: "Avenida 30 #45-67",
             rating: 4.8,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     date: "Ayer",
                     rating: 5,
                     comment: "Los mejores cortes de carne que he probado.",
-                    image: "../images/pedro.png"
+                    image: "/images/pedro.png"
                 }
             ]
         }
