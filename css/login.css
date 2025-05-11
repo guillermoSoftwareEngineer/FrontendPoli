@@ -22,7 +22,7 @@
 .login-main {
     padding: 100px 0;
     min-height: calc(100vh - 180px); /* Ajuste para footer */
-    background-image: url('./images/mesas.png');
+    background-image: url('/images/mesas.png');
     background-size: cover; /* Cubre todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
@@ -34,7 +34,7 @@
     margin-top: 15%;
     border: none;
     border-radius: 12px;
-    background-image: url('./images/chefs.png');
+    background-image: url('/images/chefs.png');
     background-size: cover; /* Cubre todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */

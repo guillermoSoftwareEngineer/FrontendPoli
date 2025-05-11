@@ -1,6 +1,6 @@
 /* Fondo de la sección */
 .register-section {
-    background-image: url('./images/castillo.png');
+    background-image: url('/images/castillo.png');
     background-size: cover; /* Cubre todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
@@ -14,7 +14,7 @@
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    background-image: url('./images/mesero.png');
+    background-image: url('/images/mesero.png');
     background-size: cover; /* Cubre todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que se repita */
