@@ -1,4 +1,4 @@
-// Efecto scroll suave
+// Efecto scroll suave para cada ancla
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animación al hacer scroll
+// Animacion al hacer scroll
 window.addEventListener('scroll', () => {
     const elements = document.querySelectorAll('.animate-on-scroll');
     elements.forEach(el => {

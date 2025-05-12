@@ -12,7 +12,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    padding-top: 80px; /* Compensa el header fijo */
+    padding-top: 80px; 
 }
 
 /* Header */

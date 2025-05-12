@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Datos de restaurantes
+    // Datos de restaurantes en las opiniones se cargan segun restaurante y usuario
     const restaurants = [
         {
             id: 1,

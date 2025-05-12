@@ -5,7 +5,7 @@
     --accent: #FF6584;
 }
 
-/* Header idéntico al home */
+/* Header igual al home */
 .header {
     background-color: var(--header-bg) !important;
 }
@@ -15,18 +15,18 @@
 }
 
 .navbar-brand .logo-highlight {
-    color: #FFD700; /* Amarillo del logo */
+    color: #FFD700; 
 }
 
-/* Main */
+/* Contenido */
 .login-main {
     padding: 100px 0;
-    min-height: calc(100vh - 180px); /* Ajuste para footer */
+    min-height: calc(100vh - 180px); 
     background-image: url('../images/mesas.png');
-    background-size: cover; /* Cubre todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    min-height: calc(100vh - 80px); /* Resta el header */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: calc(100vh - 80px); 
     opacity: 0.9;
 }
 
@@ -35,9 +35,9 @@
     border: none;
     border-radius: 12px;
     background-image: url('../images/chefs.png');
-    background-size: cover; /* Cubre todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     color: #257cfd;
 }
@@ -55,7 +55,7 @@
     box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
 }
 
-/* Footer idéntico al home */
+/* Footer igual al home */
 .footer {
     background-color: #1A1A2E;
     color: white;

@@ -1,3 +1,4 @@
+// El contenido bascamente es el mismo de los otros script 
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('loginForm');
     const notRegisteredModal = new bootstrap.Modal('#notRegisteredModal');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const user = users.find(u => u.email === email);
 
         if (user) {
-            // Redirigir según rol
+            // Redirigir según rol a nueva seccion
             window.location.href = user.role === 'admin' ? 'admin-dashboard.html' : 'user-dashboard.html';
         } else {
             notRegisteredModal.show();

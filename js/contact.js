@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         contactModal.show();
         contactForm.reset();
 
-        // Opcional: Enviar datos a un backend
-        // fetch('/api/contact', { method: 'POST', body: JSON.stringify(contactData) })
+        // Como la app usa local storage, no es necesario enviar a base de datos
     });
 });

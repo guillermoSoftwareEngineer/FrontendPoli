@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: Date.now().toString()
         };
 
-        // Validar email único
+        // Validar email unico para no registrar dos usuarios con el mismo correo electronico
         const users = JSON.parse(localStorage.getItem('users')) || [];
         const emailExists = users.some(u => u.email === user.email);
         
